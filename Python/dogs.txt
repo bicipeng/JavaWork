@@ -1,0 +1,3 @@
+Harry is a German Shepherd, he is 10-years old.
+Beetle is a Poodle, he is 2-years old.
+Mango is a Bulldog, he is 5-years old.

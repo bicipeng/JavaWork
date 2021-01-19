@@ -1,0 +1,35 @@
+$$$ing and the end . We then remove the extra space from the right side
+at , from the left side at , and from both sides at . Experimenting with
+these stripping functions can help you become familiar with manipulating
+strings. In the real world, these stripping functions are used most often to
+clean up user input before it’s stored in a program.
+Avoiding Syntax Errors with Strings
+One kind of error that you might see with some regularity is a syntax error.
+A syntax error occurs when Python doesn’t recognize a section of your program as valid Python code. For example, if you use an apostrophe within
+single quotes, you’ll produce an error. This happens because Python interprets everything between the first single quote and the apostrophe as a
+string. It then tries to interpret the rest of the text as Python code, which
+causes errors.
+Here’s how to use single and double quotes correctly. Save this program
+as apostrophe.py and then run it:
+message = "One of Python's strengths is its diverse community."
+print(message)
+The apostrophe appears inside a set of double quotes, so the Python
+interpreter has no trouble reading the string correctly:
+One of Python's strengths is its diverse community.
+However, if you use single quotes, Python can’t identify where the string
+should end:
+message = 'One of Python's strengths is its diverse community.'
+print(message)
+You’ll see the following output:
+ File "apostrophe.py", line 1
+ message = 'One of Python's strengths is its diverse community.'
+ ^
+SyntaxError: invalid syntax
+In the output you can see that the error occurs at  right after the
+second single quote. This syntax error indicates that the interpreter
+doesn’t recognize something in the code as valid Python code. Errors can
+come from a variety of sources, and I’ll point out some common ones as
+they arise. You might see syntax errors often as you learn to write proper
+Python code. Syntax errors are also the least specific kind of error, so they
+can be difficult and frustrating to identify and correct. If you get stuck on
+a particularly stubborn error, see the sug
