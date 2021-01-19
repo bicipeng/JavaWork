@@ -27,4 +27,6 @@ if (textForm !== null) {
 
         }
     })
+}else{
+    document.querySelector(".error").textContent="Invalid Input"
 }
